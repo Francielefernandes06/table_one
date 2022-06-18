@@ -49,8 +49,21 @@ function cadPessoa(nome, sobrenome, email, ra) {
     cellRa.innerHTML = ra;
   
     let btn = document.createElement('button');
+
+    let btnDelete = document.createElement('image');
+    btnDelete.innerHTML = '<div id="delete"><img src="images/trash-alt.svg" alt="delet"></div>';
+    btnDelete.setAttribute('onclick', 'deletarPessoa()');
+    btnDelete.setAttribute('class', 'btn btn-danger');
+    line.appendChild(btnDelete);
+
       
    }
+
+   function deletarPessoa() {
+    let tb = document.getElementById('table');
+    let qtdLine = tb.rows.length;
+    let line = tb.deleteRow(qtdLine - 1);
+  }
    
   
    

@@ -78,8 +78,17 @@
     text-align: end;
     padding: 0.5rem;
   }
+  #delete{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+  }
   
-  
+  #delete img {
+    width: 1.5rem;
+  }
+
   @media screen and (max-width: 980px) {
     p{
       text-align: center;
@@ -110,6 +119,9 @@
     #btn {
       width: 100%;
       margin-top: 1rem;
+    }
+    #delete{
+      margin-top: 1.5rem;
     }
    
   }

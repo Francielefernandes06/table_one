@@ -1,12 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table One</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <div class="container">
+        <header>
+            <h2>Table One</h2>
+            <p>Girls magic code</p>
+        </header>
+        <div id="dfPessoas">
+            <form name="fPessoas">
+                <label for="nome">Nome</label>
+                <input type="text" placeholder="Nome" name="txtnome">
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" placeholder="Sobrenome" name="txtsobrenome">
+                <label for="email">Email</label>
+                <input type="text" placeholder="Email" name="txtemail">
+                <label for="ra">Ra</label>
+                <input type="text" placeholder="Ra" name="txtra">
+                <input type="button" id="btn" value="Ir"
+                    onclick="cadPessoa(txtnome.value, txtsobrenome.value, txtemail.value, txtra.value)">
+            </form>
+        </div>
+        <div class="table-wrapper" id="table-wrapper">
+            <table class="fl-table" id="table">
+                <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Sobrenome</th>
+                    <th>Email</th>
+                    <th>Ra</th>
+                </tr>
+                </thead>
+                <tbody>
+            
+                <tr>
+                    <!-- <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>                     -->
+                </tr>
+               
+                <tbody>
+            </table>
+            <!-- <table class="fl-table" id="table">
+                <thead>
+                    <tr class="cabecalho">
+                        <td>Nome</td>
+                        <td>Sobrenome</td>
+                        <td>Email</td>
+                        <td>RA</td>
+                    </tr>
+                </thead>
+                <tbody>
+
+                <tbody>
+            </table> -->
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
+
 </html>

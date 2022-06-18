@@ -73,9 +73,8 @@
     cursor: pointer;
     width: 3rem;
   }
-  #btn:hover{
-    background-color: #7a3791;
-  }
+  
+  
   @media screen and (max-width: 980px) {
     form{
         width: 50%;
@@ -104,9 +103,7 @@
       width: 100%;
       margin-top: 1rem;
     }
-    #btn:hover{
-        background-color: #7a3791;
-      }
+   
   }
    
   .table-wrapper{

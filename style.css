@@ -73,10 +73,17 @@
     cursor: pointer;
     width: 3rem;
   }
-  #btn:hover{
-    background-color: #7a3791;
+  p{
+    color: red;
+    text-align: end;
+    padding: 0.5rem;
   }
+  
+  
   @media screen and (max-width: 980px) {
+    p{
+      text-align: center;
+    }
     form{
         width: 50%;
         display: flex;
@@ -104,9 +111,7 @@
       width: 100%;
       margin-top: 1rem;
     }
-    #btn:hover{
-        background-color: #7a3791;
-      }
+   
   }
    
   .table-wrapper{

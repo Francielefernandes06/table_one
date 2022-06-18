@@ -4,6 +4,12 @@
 </h1>
 <p align="center">🚀 lib para construir interfaces dinamicamenente</p> <br>
 
+<p align="center">🚧⏩Tabela de cadastro... Em construção⏪🚧</p>
+<br>
+<p align="center">
+<img src="images/print.jpeg"/>
+</p> <br>
+
 <p align="center">Hoje vamos fazer magia com os códigos, manipulando o DOM com JavaScript</p>
 <br>
 <p align="center">

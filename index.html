@@ -2,56 +2,68 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Table One</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table One</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
 <body>
-    <div class="container">
-        <header>
-            <h2>Table One</h2>
-            <p>Girls magic code</p>
-        </header>
-        <div id="dfPessoas">
-            <form name="fPessoas">
-                <label for="nome">Nome</label>
-                <input type="text" placeholder="Nome" name="txtnome">
-                <label for="sobrenome">Sobrenome</label>
-                <input type="text" placeholder="Sobrenome" name="txtsobrenome">
-                <label for="email">Email</label>
-                <input type="text" placeholder="Email" name="txtemail">
-                <label for="ra">RA</label>
-                <input type="text" placeholder="RA" name="txtra">
-                <input type="button" id="btn" value="Ir"
-                    onclick="cadPessoa(txtnome.value, txtsobrenome.value, txtemail.value, txtra.value)">
-            </form>
-        </div>
-        <p id="msgError"></p>
-        <div class="table-wrapper" id="table-wrapper">
-            <table class="fl-table" id="table">
-                <thead>
-                    <tr>
-                        <th>Nome</th>
-                        <th>Sobrenome</th>
-                        <th>Email</th>
-                        <th>Ra</th>
-                        <th>Excluir</th>
-                    </tr>
-                </thead>
-                <tbody>
-
-                    <tr>
-                        
-                    </tr>
-
-                <tbody>
-            </table>
-        </div>
+  <div class="container">
+    <header>
+      <h2>Cadastro de Aluno</h2>
+      <p>Girls magic code</p>
+    </header>
+    <div id="dfPessoas">
+      <form name="fPessoas">
+        <label for="nome">Nome</label>
+        <input type="text" placeholder="Nome" name="txtnome">
+        <label for="sobrenome">Sobrenome</label>
+        <input type="text" placeholder="Sobrenome" name="txtsobrenome">
+        <label for="email">Email</label>
+        <input type="text" placeholder="Email" name="txtemail">
+        <label for="ra">Ra</label>
+        <input type="text" placeholder="Ra" name="txtra">
+        <input type="button" id="btn" value="Ir"
+          onclick="cadPessoa(txtnome.value, txtsobrenome.value, txtemail.value, txtra.value)">
+      </form>
     </div>
-    <script src="script.js"></script>
+    <p id="msgError"></p>
+    <div class="table-wrapper" id="table-wrapper">
+      <table class="fl-table" id="table">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Sobrenome</th>
+            <th>Email</th>
+            <th>Ra</th>
+            <th>Excluir</th>
+            <th>Editar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+          </tr>
+        <tbody>
+      </table>
+    </div>
+    <!-- html modal -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <form name="fEditar" class="edit">
+          <label for="nome">Nome</label>
+          <input type="text" id="txtname" name="txtnome">
+          <label for="sobrenome">Sobrenome</label>
+          <input type="text" id="txtsobrenome" name="txtsobrenome">
+          <label for="email">Email</label>
+          <input type="text" id="txtemail" name="txtemail">
+          <label for="ra">Ra</label>
+          <input type="text" id="txtra" name="txtra">
+          <input type="button" id="btnSalvar" value="Salvar" onclick="saveModal(txtnome.value, txtsobrenome.value, txtemail.value, txtra.value)">
+  </div>
+  <script src="script.js"></script>
 </body>
-
 </html>
